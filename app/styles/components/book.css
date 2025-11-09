@@ -1,0 +1,253 @@
+/* Book Card Styles */
+.book-card {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.book-card-image {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.book-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.book-stock-badge {
+  position: absolute;
+  top: var(--spacing-sm);
+  right: var(--spacing-sm);
+}
+
+.book-card-content {
+  padding: var(--spacing-md);
+}
+
+.book-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-primary);
+}
+
+.book-author {
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-sm);
+}
+
+.book-price {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.book-card-actions {
+  padding: var(--spacing-md);
+  padding-top: 0;
+}
+
+/* Book List Styles */
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg);
+}
+
+.book-list-empty {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  color: var(--color-text-light);
+}
+
+/* Book Detail Styles */
+.book-detail {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+}
+
+.book-detail-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--spacing-xl);
+}
+
+.book-detail-image {
+  position: relative;
+}
+
+.book-detail-image-img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.book-detail-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.book-detail-title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.book-detail-author {
+  font-size: 1.25rem;
+  color: var(--color-text-light);
+}
+
+.book-detail-price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.book-detail-description h2 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-primary);
+}
+
+.book-detail-description p {
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.book-detail-metadata {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  background-color: var(--color-background);
+  border-radius: var(--border-radius);
+}
+
+.book-detail-metadata div {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.book-detail-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.book-quantity-input {
+  width: 80px;
+  padding: var(--spacing-sm);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--border-radius);
+  margin-left: var(--spacing-sm);
+}
+
+/* Category Filter Styles */
+.category-filter {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category-active {
+  background-color: var(--color-primary) !important;
+  color: white !important;
+}
+
+/* Homepage Styles */
+.homepage {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+}
+
+.homepage-header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.homepage-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.homepage-header h1 {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.homepage-header p {
+  font-size: 1.125rem;
+  color: var(--color-text-light);
+}
+
+/* Category Page Styles */
+.category-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+}
+
+.category-page-header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.category-page-header h1 {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: var(--spacing-lg);
+  padding: var(--spacing-sm);
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .book-detail-content {
+    grid-template-columns: 1fr;
+  }
+
+  .book-list {
+    grid-template-columns: 1fr;
+  }
+
+  .homepage-header h1 {
+    font-size: 2rem;
+  }
+}
+

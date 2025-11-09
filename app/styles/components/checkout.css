@@ -1,0 +1,163 @@
+/* Shipping Form Styles */
+.shipping-form,
+.payment-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+}
+
+.shipping-form h2,
+.payment-form h2 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+}
+
+/* Payment Form Styles */
+.payment-note {
+  padding: var(--spacing-md);
+  background-color: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-lg);
+  font-size: 0.875rem;
+  color: #856404;
+}
+
+/* Order Summary Styles */
+.order-summary {
+  background-color: var(--color-background);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.order-summary h2 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.order-summary-items {
+  margin-bottom: var(--spacing-lg);
+}
+
+.order-summary-item {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-md) 0;
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+.order-summary-item:last-child {
+  border-bottom: none;
+}
+
+.order-summary-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.order-summary-item-title {
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.order-summary-item-details {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+}
+
+.order-summary-item-subtotal {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.order-summary-total {
+  display: flex;
+  justify-content: space-between;
+  padding-top: var(--spacing-md);
+  margin-top: var(--spacing-md);
+  border-top: 2px solid var(--color-primary);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.order-total-amount {
+  color: var(--color-primary);
+}
+
+/* Checkout Page Styles */
+.checkout-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: var(--spacing-xl);
+}
+
+.checkout-page-header {
+  grid-column: 1 / -1;
+  margin-bottom: var(--spacing-lg);
+}
+
+.checkout-page-header h1 {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+.checkout-step-indicator {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background-color: var(--color-background);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-lg);
+  font-size: 0.875rem;
+}
+
+.checkout-step-indicator span:first-child {
+  color: var(--color-success);
+  font-weight: 600;
+}
+
+.checkout-main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.checkout-sidebar {
+  position: sticky;
+  top: var(--spacing-lg);
+  height: fit-content;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .checkout-page {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-sidebar {
+    position: static;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+

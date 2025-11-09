@@ -31,7 +31,39 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+**TDD Compliance**: 
+- [ ] Test strategy defined for all new features/components
+- [ ] Test scenarios approved before implementation begins
+- [ ] Red-Green-Refactor cycle planned
+
+**Component Architecture**: 
+- [ ] Reusable components identified and structured
+- [ ] Component interfaces (props) defined
+- [ ] Component testability verified
+
+**Design System**: 
+- [ ] UI components align with boutique design principles
+- [ ] Design tokens (colors, typography, spacing) identified
+- [ ] Responsive and accessible design considered
+
+**Performance**: 
+- [ ] Performance targets defined (Core Web Vitals)
+- [ ] Code splitting strategy planned
+- [ ] Image optimization approach defined
+
+**E-commerce Requirements**: 
+- [ ] Security considerations for payment/user data identified
+- [ ] E-commerce flow compliance verified
+- [ ] State management approach for cart/checkout defined
+
+**Security & Privacy**: 
+- [ ] Input validation and sanitization strategy defined
+- [ ] XSS prevention measures implemented (CSP, sanitization)
+- [ ] Sensitive data handling and storage strategy defined
+- [ ] Error handling prevents information leakage
+- [ ] HTTPS/TLS encryption requirements identified
+- [ ] Dependency vulnerability scanning process defined
+- [ ] Privacy compliance requirements identified (GDPR, CCPA if applicable)
 
 ## Project Structure
 

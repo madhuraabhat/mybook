@@ -1,0 +1,248 @@
+/* Order Card Styles */
+.order-card {
+  margin-bottom: var(--spacing-lg);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.order-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.order-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-md);
+}
+
+.order-card-id {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.order-card-date {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+}
+
+.order-card-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--spacing-md);
+  border-top: var(--border-width) solid var(--color-border);
+}
+
+.order-card-items {
+  color: var(--color-text-light);
+  font-size: 0.875rem;
+}
+
+.order-card-total {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+/* Order Detail Styles */
+.order-detail {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+}
+
+.order-detail-card {
+  padding: var(--spacing-xl);
+}
+
+.order-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.order-detail-header h2 {
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.order-date {
+  color: var(--color-text-light);
+  font-size: 0.875rem;
+}
+
+.order-detail-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.order-detail-section h3 {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.order-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.order-item-row {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-md);
+  background-color: var(--color-background);
+  border-radius: var(--border-radius);
+}
+
+.order-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.order-item-title {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.order-item-author {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+}
+
+.order-item-quantity {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+}
+
+.order-item-pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--spacing-xs);
+}
+
+.order-item-price {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+}
+
+.order-item-subtotal {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.order-shipping-info,
+.order-payment-info {
+  padding: var(--spacing-md);
+  background-color: var(--color-background);
+  border-radius: var(--border-radius);
+  line-height: 1.8;
+}
+
+.order-detail-summary {
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-lg);
+  border-top: 2px solid var(--color-primary);
+}
+
+.order-summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-sm) 0;
+}
+
+.order-summary-row.order-total {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
+  border-top: var(--border-width) solid var(--color-border);
+}
+
+.order-total-amount {
+  color: var(--color-primary);
+}
+
+/* Orders Page Styles */
+.orders-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+}
+
+.orders-page-header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.orders-page-header h1 {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.orders-empty {
+  text-align: center;
+  padding: var(--spacing-2xl);
+}
+
+.orders-empty h2 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.orders-empty p {
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Order Confirmation Page Styles */
+.order-confirmation-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+}
+
+.order-confirmation-header {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.order-confirmation-header h1 {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  color: var(--color-success);
+  margin-bottom: var(--spacing-md);
+}
+
+.order-confirmation-header p {
+  font-size: 1.125rem;
+  color: var(--color-text-light);
+}
+
+.order-confirmation-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  margin-top: var(--spacing-xl);
+}
+
